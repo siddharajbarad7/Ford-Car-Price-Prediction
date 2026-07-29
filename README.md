@@ -1,6 +1,10 @@
 # 🚗 Ford Car Price Prediction
 
-A machine learning project that predicts the price of used Ford cars based on features like model, year, mileage, transmission, fuel type, tax, mpg, and engine size.
+A regression-based machine learning project that predicts the resale price of used Ford cars using features such as model, year, mileage, transmission, fuel type, road tax, mpg, and engine size. The project covers the full workflow — exploratory data analysis, feature encoding, scaling, model training, and evaluation.
+
+## 📌 Overview
+
+Used-car pricing depends on a mix of categorical and numerical factors that don't always have an obvious relationship with price. This project explores that relationship on a real-world dataset of ~18,000 Ford listings and builds a Linear Regression model to estimate price, comparing two different categorical-encoding strategies along the way.
 
 ## 📊 Dataset
 
@@ -48,15 +52,25 @@ A machine learning project that predicts the price of used Ford cars based on fe
 
 ## 🛠️ Tech Stack
 
-- Python
-- Pandas, NumPy
-- Matplotlib, Seaborn
-- Scikit-learn
+- **Language:** Python
+- **Data Handling:** Pandas, NumPy
+- **Visualization:** Matplotlib, Seaborn
+- **Machine Learning:** Scikit-learn
+
+## 💡 Key Skills Demonstrated
+
+- Exploratory data analysis and data visualization
+- Categorical feature encoding (One-Hot vs. Label Encoding)
+- Feature scaling with `StandardScaler`
+- Train/test splitting and model evaluation
+- Regression modeling with Scikit-learn
+- Interpreting model performance using R² score
 
 ## 📁 Project Structure
 
 ```
-├── car-price-predict.ipynb   # Main notebook (EDA, preprocessing, model training)
+Ford-Car-Price-Prediction/
+├── car-price-predict.ipynb   # Main notebook: EDA, preprocessing, model training & evaluation
 └── README.md                 # Project documentation
 ```
 
@@ -64,8 +78,8 @@ A machine learning project that predicts the price of used Ford cars based on fe
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/<your-username>/car-price-predict.git
-   cd car-price-predict
+   git clone https://github.com/siddharajbarad7/Ford-Car-Price-Prediction.git
+   cd Ford-Car-Price-Prediction
    ```
 2. Install dependencies
    ```bash
@@ -82,6 +96,11 @@ A machine learning project that predicts the price of used Ford cars based on fe
 - Perform hyperparameter tuning
 - Handle outliers (e.g., the `year` column has a max value of 2060, which is likely a data entry error)
 - Feature engineering (e.g., car age instead of year)
+
+## 👤 Author
+
+**Siddharaj Barad**
+GitHub: [@siddharajbarad7](https://github.com/siddharajbarad7)
 
 ## 📄 License
 
